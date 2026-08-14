@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { Search, Globe, KeyRound, Sparkles, Code2, RefreshCw } from 'lucide-react';
 import { REGIONS } from '../constants/regions';
 
-export const Header = ({ 
-  currentRegion, 
-  onRegionChange, 
-  onSearch, 
+export const Header = ({
+  currentRegion,
+  onRegionChange,
+  onSearch,
   showCompactSearch,
   isMockMode,
   onOpenApiKeyModal,
@@ -59,7 +59,7 @@ export const Header = ({
 
       <div className="header-right">
         {/* API Status Badge */}
-        <button 
+        <button
           className={`api-status-badge ${isMockMode ? 'demo' : 'live'}`}
           onClick={onOpenApiKeyModal}
           title={isMockMode ? 'Operando en Modo Demo (100% Funcional)' : 'Operando con Riot API en vivo'}
@@ -85,10 +85,10 @@ export const Header = ({
           </select>
         </div>
 
-        {/* GitHub / CV Link */}
-        <a 
-          href="https://github.com" 
-          target="_blank" 
+        {/* GitHub */}
+        <a
+          href="https://github.com/Hydroc-GT/rift-gg"
+          target="_blank"
           rel="noreferrer"
           className="header-icon-link"
           title="Ver Código en GitHub"

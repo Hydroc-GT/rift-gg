@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  Search, 
-  Sparkles, 
-  Zap, 
-  TrendingUp, 
+import {
+  Search,
+  Sparkles,
+  Zap,
+  TrendingUp,
   ChevronRight,
   Award,
   BarChart3,
@@ -12,10 +12,10 @@ import {
 } from 'lucide-react';
 import { REGIONS } from '../constants/regions';
 
-export const HeroSection = ({ 
-  onSearch, 
-  currentRegion, 
-  onRegionChange, 
+export const HeroSection = ({
+  onSearch,
+  currentRegion,
+  onRegionChange,
   onSelectDemoProfile,
   onNavigateToTab
 }) => {
@@ -84,7 +84,7 @@ export const HeroSection = ({
               <input
                 type="text"
                 className="hero-search-input"
-                placeholder="Busca por Invocador + Tag (ej: Faker#KR1) o Campeón..."
+                placeholder="Busca por Invocador + Tag (ej: Faker#KR1)"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 autoFocus
@@ -170,8 +170,8 @@ export const HeroSection = ({
 
         {/* Highlight Feature Showcase Cards */}
         <div className="hero-feature-cards">
-          <div 
-            className="feature-card" 
+          <div
+            className="feature-card"
             onClick={() => onNavigateToTab('champions')}
           >
             <div className="feature-card-header">
@@ -190,7 +190,7 @@ export const HeroSection = ({
             </div>
           </div>
 
-          <div 
+          <div
             className="feature-card"
             onClick={() => onSelectDemoProfile('G2 Caps#1323', 'euw1')}
           >
@@ -210,7 +210,7 @@ export const HeroSection = ({
             </div>
           </div>
 
-          <div 
+          <div
             className="feature-card"
             onClick={() => onSelectDemoProfile('Hide on bush#KR1', 'kr')}
           >

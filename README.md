@@ -71,4 +71,4 @@ Diseñada con una arquitectura modular en **React**, integración dinámica con 
 
 ## 👨‍💻 Autor & Contacto
 
-Proyecto desarrollado para portafolio técnico y demostración de desarrollo web moderno con React y APIs RESTful.
+Proyecto desarrollado para aprendizaje y demostración de desarrollo web moderno con React y APIs RESTful.

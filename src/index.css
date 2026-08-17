@@ -1,35 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
 
 :root {
-  /* Brand Color Palette (Deep Slate Gaming Navy) */
-  --bg-main: #0b0d13;
-  --bg-sidebar: #0e111a;
-  --bg-surface: #141824;
-  --bg-surface-elevated: #1b2030;
-  --bg-card: #161b2a;
-  --bg-card-hover: #1e2438;
+  /* Signature Brand Color Palette (Deep Obsidian & Cyber-Amethyst / Void Arcane) */
+  --bg-main: #08090e;
+  --bg-sidebar: #0c0e15;
+  --bg-surface: #11141f;
+  --bg-surface-elevated: #171b29;
+  --bg-card: #131724;
+  --bg-card-hover: #1b2133;
   
-  --border-subtle: #232a3d;
-  --border-strong: #323b54;
-  --border-focus: #4f46e5;
+  --border-subtle: #202638;
+  --border-strong: #2f3852;
+  --border-focus: #8b5cf6;
 
-  /* Accent Colors */
-  --accent-primary: #3b82f6;
-  --accent-primary-hover: #2563eb;
-  --accent-purple: #8b5cf6;
+  /* Accent Colors (Neon Violet, Cyber Indigo & Electric Cyan) */
+  --accent-primary: #8b5cf6;
+  --accent-primary-hover: #7c3aed;
+  --accent-gradient: linear-gradient(135deg, #a855f7 0%, #6366f1 50%, #06b6d4 100%);
+  --accent-purple: #a855f7;
+  --accent-indigo: #6366f1;
   --accent-cyan: #06b6d4;
+  --accent-cyan-light: #22d3ee;
   --accent-gold: #f59e0b;
   --accent-gold-light: #fbbf24;
 
-  /* Win & Loss Game Accents */
-  --color-victory: #2563eb;
-  --color-victory-bg: rgba(37, 99, 235, 0.12);
-  --color-victory-border: rgba(59, 130, 246, 0.35);
-  --color-victory-text: #60a5fa;
+  /* Win & Loss Game Accents (Electric Teal for Victory, Neon Crimson for Defeat) */
+  --color-victory: #06b6d4;
+  --color-victory-bg: rgba(6, 182, 212, 0.12);
+  --color-victory-border: rgba(34, 211, 238, 0.35);
+  --color-victory-text: #38bdf8;
 
-  --color-defeat: #e11d48;
-  --color-defeat-bg: rgba(225, 29, 72, 0.12);
-  --color-defeat-border: rgba(244, 63, 94, 0.35);
+  --color-defeat: #f43f5e;
+  --color-defeat-bg: rgba(244, 63, 94, 0.12);
+  --color-defeat-border: rgba(251, 113, 133, 0.35);
   --color-defeat-text: #fb7185;
 
   --color-remake: #64748b;
@@ -40,7 +43,7 @@
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
   --text-muted: #64748b;
-  --text-inverse: #0b0d13;
+  --text-inverse: #08090e;
 
   /* Fonts */
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
@@ -48,11 +51,12 @@
   --font-mono: 'JetBrains Mono', monospace;
 
   /* Shadows & Glows */
-  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.4);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
-  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.6);
-  --glow-blue: 0 0 25px rgba(59, 130, 246, 0.25);
-  --glow-gold: 0 0 20px rgba(245, 158, 11, 0.25);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 8px 28px rgba(0, 0, 0, 0.7);
+  --glow-purple: 0 0 25px rgba(139, 92, 246, 0.35);
+  --glow-cyan: 0 0 25px rgba(6, 182, 212, 0.3);
+  --glow-gold: 0 0 20px rgba(245, 158, 11, 0.3);
 
   /* Radii */
   --radius-sm: 6px;
@@ -78,10 +82,9 @@ html, body {
   font-family: var(--font-sans);
   font-size: 14px;
   line-height: 1.5;
-  min-height: 100vh;
-  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 #root {
@@ -90,51 +93,40 @@ html, body {
   flex-direction: column;
 }
 
-/* Custom Scrollbar */
+/* Custom Gaming Scrollbar */
 ::-webkit-scrollbar {
   width: 7px;
   height: 7px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--bg-main);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--border-strong);
-  border-radius: 4px;
+  border-radius: var(--radius-full);
 }
+
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--text-muted);
+  background: var(--accent-primary);
 }
 
-/* Typography Defaults */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
-  color: var(--text-primary);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-button, input, select {
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
-  border: none;
-  outline: none;
+/* Selection Color */
+::selection {
+  background: rgba(139, 92, 246, 0.35);
+  color: #fff;
 }
 
 button {
+  font-family: inherit;
   cursor: pointer;
+  border: none;
   background: none;
-  transition: all var(--transition-fast);
 }
 
-img {
-  max-width: 100%;
-  display: block;
-  user-select: none;
+input, select {
+  font-family: inherit;
+  border: none;
+  outline: none;
 }

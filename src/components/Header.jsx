@@ -23,7 +23,6 @@ export const Header = ({
     <header className="app-header">
       <div className="header-left">
         <button className="mobile-brand" onClick={onResetToHome}>
-          <Sparkles size={20} className="brand-icon" />
           <span className="brand-name">RIFT<span className="brand-accent">.GG</span></span>
         </button>
 
@@ -33,7 +32,7 @@ export const Header = ({
               <Search size={16} className="search-icon-muted" />
               <input
                 type="text"
-                placeholder="Buscar invocador (ej: Faker#KR1)..."
+                placeholder="Buscar invocador..."
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 className="compact-search-input"
@@ -65,7 +64,7 @@ export const Header = ({
           title={isMockMode ? 'Operando en Modo Demo (100% Funcional)' : 'Operando con Riot API en vivo'}
         >
           <span className="status-dot"></span>
-          <span className="status-text">{isMockMode ? 'Demo Mode' : 'Live Riot API'}</span>
+          <span className="status-text">{isMockMode ? 'Demo' : 'Live'}</span>
           <KeyRound size={13} className="key-icon" />
         </button>
 
@@ -79,7 +78,7 @@ export const Header = ({
           >
             {REGIONS.map((r) => (
               <option key={r.id} value={r.id}>
-                {r.label} - {r.name}
+                {r.label}
               </option>
             ))}
           </select>

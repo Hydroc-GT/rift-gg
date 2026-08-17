@@ -72,3 +72,9 @@ Diseñada con una arquitectura modular en **React**, integración dinámica con 
 ## 👨‍💻 Autor & Contacto
 
 Proyecto desarrollado para aprendizaje y demostración de desarrollo web moderno con React y APIs RESTful.
+
+---
+
+## 📜 Legal Disclaimer (Riot Games Compliance)
+
+> **RIFT.GG isn’t endorsed by Riot Games** and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.

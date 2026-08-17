@@ -37,7 +37,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid #232a3d;
+  border-bottom: 1px solid #202638;
   cursor: pointer;
   user-select: none;
   text-align: center;
@@ -61,7 +61,9 @@
 }
 
 .brand-accent {
-  color: #38bdf8;
+  background: linear-gradient(135deg, #c084fc 0%, #22d3ee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .sidebar-cta {
@@ -71,8 +73,8 @@
 .plus-banner-btn {
   width: 100%;
   padding: 10px 12px;
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
-  border: 1px solid rgba(96, 165, 250, 0.3);
+  background: linear-gradient(135deg, #7c3aed, #4f46e5);
+  border: 1px solid rgba(168, 85, 247, 0.35);
   border-radius: 10px;
   color: #fff;
   font-size: 13px;
@@ -81,11 +83,13 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 4px 14px rgba(124, 58, 237, 0.35);
+  transition: all 0.2s ease;
 }
 
 .plus-banner-btn:hover {
-  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+  box-shadow: 0 4px 18px rgba(139, 92, 246, 0.45);
   transform: translateY(-1px);
 }
 
@@ -121,14 +125,14 @@
 }
 
 .nav-item:hover {
-  background-color: #161b2a;
+  background-color: #161b29;
   color: #f8fafc;
 }
 
 .nav-item.active {
-  background: linear-gradient(90deg, rgba(59, 130, 246, 0.2), rgba(59, 130, 246, 0.05));
-  color: #60a5fa;
-  border-left: 3px solid #3b82f6;
+  background: linear-gradient(90deg, rgba(139, 92, 246, 0.22), rgba(6, 182, 212, 0.05));
+  color: #c084fc;
+  border-left: 3px solid #a855f7;
   font-weight: 600;
 }
 
@@ -151,8 +155,8 @@
 }
 
 .nav-badge.meta {
-  background-color: rgba(59, 130, 246, 0.2);
-  color: #60a5fa;
+  background-color: rgba(139, 92, 246, 0.2);
+  color: #c084fc;
 }
 
 .nav-badge.pro {
@@ -396,8 +400,8 @@
   position: relative;
   overflow: hidden;
   background:
-    linear-gradient(180deg, rgba(11, 13, 19, 0.75) 0%, rgba(11, 13, 19, 0.94) 75%, #0b0d13 100%),
-    radial-gradient(circle at 50% 25%, rgba(37, 99, 235, 0.22) 0%, rgba(11, 13, 19, 0.7) 60%),
+    linear-gradient(180deg, rgba(8, 9, 14, 0.82) 0%, rgba(8, 9, 14, 0.96) 75%, #08090e 100%),
+    radial-gradient(circle at 50% 25%, rgba(139, 92, 246, 0.24) 0%, rgba(6, 182, 212, 0.08) 40%, rgba(8, 9, 14, 0.7) 65%),
     url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg') center top / cover no-repeat;
 }
 
@@ -406,10 +410,10 @@
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 650px;
-  height: 380px;
-  background: radial-gradient(circle, rgba(99, 102, 241, 0.2) 0%, rgba(59, 130, 246, 0.1) 50%, transparent 80%);
-  filter: blur(90px);
+  width: 680px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.22) 0%, rgba(6, 182, 212, 0.12) 50%, transparent 80%);
+  filter: blur(95px);
   pointer-events: none;
 }
 
@@ -441,18 +445,18 @@
   align-items: center;
   gap: 8px;
   padding: 6px 16px;
-  background: rgba(59, 130, 246, 0.12);
-  border: 1px solid rgba(59, 130, 246, 0.3);
+  background: rgba(139, 92, 246, 0.14);
+  border: 1px solid rgba(168, 85, 247, 0.35);
   border-radius: 9999px;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.08em;
-  color: #60a5fa;
+  color: #c084fc;
   margin-bottom: 20px;
 }
 
 .hero-badge-icon {
-  color: #38bdf8;
+  color: #22d3ee;
 }
 
 .hero-title {
@@ -466,7 +470,7 @@
 }
 
 .hero-title-gradient {
-  background: linear-gradient(135deg, #38bdf8, #818cf8);
+  background: linear-gradient(135deg, #c084fc 0%, #818cf8 50%, #22d3ee 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -490,8 +494,8 @@
 .hero-search-bar {
   display: flex;
   align-items: center;
-  background: rgba(20, 24, 36, 0.95);
-  border: 1px solid #323b54;
+  background: rgba(17, 20, 31, 0.95);
+  border: 1px solid #2f3852;
   border-radius: 20px;
   padding: 6px 8px 6px 20px;
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.08);
@@ -499,8 +503,8 @@
 }
 
 .hero-search-bar:focus-within {
-  border-color: #3b82f6;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8), 0 0 30px rgba(59, 130, 246, 0.4);
+  border-color: #8b5cf6;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.85), 0 0 32px rgba(139, 92, 246, 0.38);
   transform: translateY(-2px);
 }
 
@@ -539,9 +543,9 @@
 }
 
 .hero-region-dropdown {
-  background-color: #1b2030;
-  border: 1px solid #232a3d;
-  color: #38bdf8;
+  background-color: #171b29;
+  border: 1px solid #202638;
+  color: #22d3ee;
   font-size: 12px;
   font-weight: 700;
   padding: 9px 14px;
@@ -550,7 +554,7 @@
 }
 
 .hero-search-btn {
-  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  background: linear-gradient(135deg, #7c3aed, #6366f1);
   color: #fff;
   padding: 10px 22px;
   border-radius: 8px;
@@ -559,11 +563,13 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+  box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
+  transition: all 0.2s ease;
 }
 
 .hero-search-btn:hover {
-  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+  box-shadow: 0 4px 20px rgba(139, 92, 246, 0.55);
   transform: scale(1.02);
 }
 
@@ -886,15 +892,15 @@
 
 /* Profile Header Card */
 .profile-header-card {
-  background: linear-gradient(180deg, #1b2030 0%, #161b2a 100%);
-  border: 1px solid #232a3d;
+  background: linear-gradient(180deg, #161a29 0%, #111420 100%);
+  border: 1px solid #202638;
   border-radius: 14px;
   padding: 24px 28px;
   display: flex;
   align-items: center;
   gap: 24px;
   margin-bottom: 24px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.55);
 }
 
 .profile-avatar-wrapper {
@@ -907,8 +913,8 @@
   height: 96px;
   border-radius: 20px;
   overflow: hidden;
-  border: 2px solid #3b82f6;
-  box-shadow: 0 0 15px rgba(59, 130, 246, 0.35);
+  border: 2px solid #8b5cf6;
+  box-shadow: 0 0 18px rgba(139, 92, 246, 0.4);
 }
 
 .profile-avatar-img {
@@ -922,9 +928,9 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #0b0d13;
-  border: 1px solid #3b82f6;
-  color: #fff;
+  background-color: #08090e;
+  border: 1px solid #8b5cf6;
+  color: #c084fc;
   font-family: var(--font-mono, monospace);
   font-size: 11px;
   font-weight: 700;
@@ -961,8 +967,8 @@
   font-weight: 700;
   padding: 2px 8px;
   border-radius: 4px;
-  background-color: rgba(59, 130, 246, 0.15);
-  color: #60a5fa;
+  background-color: rgba(139, 92, 246, 0.16);
+  color: #c084fc;
 }
 
 .profile-meta-row {
@@ -985,7 +991,7 @@
 }
 
 .meta-separator {
-  color: #323b54;
+  color: #2f3852;
 }
 
 .profile-actions-row {
@@ -1002,26 +1008,29 @@
   border-radius: 8px;
   font-size: 12.5px;
   font-weight: 600;
+  transition: all 0.15s ease;
 }
 
 .profile-action-btn.primary {
-  background: #2563eb;
+  background: linear-gradient(135deg, #7c3aed, #6366f1);
   color: #fff;
+  box-shadow: 0 2px 10px rgba(124, 58, 237, 0.35);
 }
 
 .profile-action-btn.primary:hover {
-  background: #1d4ed8;
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+  box-shadow: 0 4px 14px rgba(139, 92, 246, 0.45);
 }
 
 .profile-action-btn.secondary {
-  background-color: #141824;
-  border: 1px solid #232a3d;
+  background-color: #111420;
+  border: 1px solid #202638;
   color: #94a3b8;
 }
 
 .profile-action-btn.secondary:hover {
   color: #fff;
-  border-color: #323b54;
+  border-color: #2f3852;
 }
 
 .profile-action-btn.secondary.active {
@@ -1075,16 +1084,16 @@
 }
 
 .ranked-card {
-  background-color: #161b2a;
-  border: 1px solid #232a3d;
+  background-color: #131724;
+  border: 1px solid #202638;
   border-radius: 12px;
   padding: 16px;
 }
 
 /* Compact Unranked Card (Matching reference image) */
 .ranked-card.unranked-compact {
-  background-color: #161b2a;
-  border: 1px solid #232a3d;
+  background-color: #131724;
+  border: 1px solid #202638;
   border-radius: 10px;
   padding: 12px 18px;
 }
@@ -1104,7 +1113,7 @@
 .unranked-queue-name {
   font-size: 13.5px;
   font-weight: 700;
-  color: #60a5fa;
+  color: #c084fc;
 }
 
 .unranked-info-icon {
@@ -1199,10 +1208,9 @@
 }
 
 .league-points {
-  font-family: var(--font-mono, monospace);
   font-size: 13px;
   font-weight: 700;
-  color: #38bdf8;
+  color: #22d3ee;
 }
 
 .unranked-hint {
@@ -1216,7 +1224,7 @@
   align-items: center;
   justify-content: space-between;
   font-size: 12px;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .win-loss-text {
@@ -1225,7 +1233,7 @@
 }
 
 .text-wins {
-  color: #60a5fa;
+  color: #22d3ee;
   font-weight: 600;
 }
 
@@ -1245,14 +1253,14 @@
 
 .winrate-bar-track {
   height: 6px;
-  background-color: #1b2030;
+  background-color: #171b29;
   border-radius: 9999px;
   overflow: hidden;
 }
 
 .winrate-bar-fill {
   height: 100%;
-  background: linear-gradient(90deg, #2563eb, #38bdf8);
+  background: linear-gradient(90deg, #7c3aed, #22d3ee);
   border-radius: 9999px;
 }
 
@@ -1426,9 +1434,10 @@
 }
 
 .filter-tab.active {
-  background: #2563eb;
+  background: linear-gradient(135deg, #7c3aed, #6366f1);
   color: #fff;
-  border-color: #3b82f6;
+  border-color: #8b5cf6;
+  box-shadow: 0 2px 10px rgba(124, 58, 237, 0.35);
 }
 
 .history-summary-widget {
@@ -1457,7 +1466,7 @@
 }
 
 .text-win {
-  color: #60a5fa;
+  color: #22d3ee;
 }
 
 .text-loss {
@@ -1477,7 +1486,7 @@
 .summary-ratio-tag {
   font-size: 11px;
   font-weight: 600;
-  color: #38bdf8;
+  color: #22d3ee;
 }
 
 .match-cards-list {
@@ -1487,8 +1496,8 @@
 }
 
 .match-history-empty {
-  background-color: #161b2a;
-  border: 1px solid #232a3d;
+  background-color: #131724;
+  border: 1px solid #202638;
   border-radius: 12px;
   padding: 40px;
   text-align: center;
@@ -1505,25 +1514,25 @@
   overflow: hidden;
   border-left: 5px solid;
   transition: all 0.15s ease;
-  background-color: #161b2a;
+  background-color: #131724;
 }
 
 .match-card-wrapper.victory {
-  background-color: #121929;
-  border-left-color: #2563eb;
-  border: 1px solid rgba(59, 130, 246, 0.3);
+  background: linear-gradient(90deg, rgba(6, 182, 212, 0.09) 0%, rgba(19, 23, 36, 0.95) 100%);
+  border-left-color: #06b6d4;
+  border: 1px solid rgba(6, 182, 212, 0.35);
   border-left-width: 5px;
 }
 
 .match-card-wrapper.defeat {
-  background-color: #24141c;
-  border-left-color: #e11d48;
-  border: 1px solid rgba(225, 29, 72, 0.3);
+  background: linear-gradient(90deg, rgba(244, 63, 94, 0.09) 0%, rgba(19, 23, 36, 0.95) 100%);
+  border-left-color: #f43f5e;
+  border: 1px solid rgba(244, 63, 94, 0.35);
   border-left-width: 5px;
 }
 
 .match-card-wrapper.remake {
-  background-color: #191c26;
+  background-color: #161a26;
   border-left-color: #64748b;
   border: 1px solid rgba(100, 116, 139, 0.25);
   border-left-width: 5px;
@@ -1558,7 +1567,7 @@
 .status-divider {
   width: 24px;
   height: 1px;
-  background-color: #232a3d;
+  background-color: #202638;
   margin: 2px 0;
 }
 
@@ -1568,7 +1577,7 @@
 }
 
 .result-label.victory {
-  color: #60a5fa;
+  color: #22d3ee;
 }
 
 .result-label.defeat {
@@ -2619,6 +2628,53 @@
   height: 90px;
 }
 
+/* Application Legal Disclaimer Footer (Riot Games Compliance) */
+.app-footer {
+  margin-top: 60px;
+  padding: 32px 24px;
+  border-top: 1px solid #1e2433;
+  background-color: rgba(11, 13, 19, 0.7);
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-brand-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-brand-name {
+  font-family: var(--font-heading, 'Outfit', sans-serif);
+  font-size: 16px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+.footer-copy {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.footer-disclaimer-text {
+  font-size: 11.5px;
+  line-height: 1.6;
+  color: #64748b;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 1100px) {
   .profile-main-layout {
@@ -2645,34 +2701,293 @@
 }
 
 @media (max-width: 768px) {
+  .app-container {
+    overflow-x: hidden;
+    width: 100vw;
+  }
+
   .sidebar {
     display: none;
   }
 
   .main-layout {
     margin-left: 0;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .app-header {
+    padding: 0 12px;
+    height: 58px;
+    gap: 8px;
   }
 
   .mobile-brand {
     display: flex;
   }
 
+  .mobile-brand .brand-name {
+    font-size: 20px;
+  }
+
+  .header-right {
+    gap: 6px;
+  }
+
+  .api-status-badge {
+    padding: 5px 8px;
+    font-size: 11px;
+  }
+
+  .region-selector-pill {
+    padding: 4px 8px;
+  }
+
+  .header-region-select {
+    font-size: 11px;
+  }
+
+  .header-icon-link {
+    width: 32px;
+    height: 32px;
+  }
+
+  .hero-container {
+    padding: 24px 14px 40px;
+    min-height: calc(100vh - 58px);
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .hero-ambient-glow {
+    width: 100%;
+    max-width: 320px;
+    height: 200px;
+  }
+
+  .hero-badge {
+    padding: 4px 12px;
+    font-size: 10px;
+    margin-bottom: 14px;
+  }
+
   .hero-title {
     font-size: 42px;
+    margin-bottom: 10px;
+  }
+
+  .hero-subtitle {
+    font-size: 13.5px;
+    line-height: 1.5;
+    padding: 0 6px;
+  }
+
+  .hero-search-wrapper {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero-search-bar {
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 16px;
+    padding: 10px 12px;
+    gap: 10px;
+  }
+
+  .hero-search-input-group {
+    width: 100%;
+  }
+
+  .hero-search-input {
+    font-size: 14px;
+  }
+
+  .hero-search-actions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .hero-region-wrapper {
+    flex-shrink: 0;
+  }
+
+  .hero-region-dropdown {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .hero-search-btn {
+    flex: 1;
+    justify-content: center;
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .hero-favorites-row {
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+
+  .fav-label {
+    font-size: 11px;
+  }
+
+  .hero-quick-demos {
+    margin-bottom: 32px;
+    gap: 6px;
+  }
+
+  .demo-label {
+    font-size: 11px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .demo-pills-list {
+    justify-content: center;
+  }
+
+  .demo-pill {
+    padding: 4px 10px;
+    font-size: 11.5px;
+  }
+
+  /* Profile View Mobile */
+  .profile-view-container {
+    padding: 14px 12px 30px;
+  }
+
+  .profile-header-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 18px 14px;
+    gap: 16px;
+  }
+
+  .profile-info-content {
+    width: 100%;
+  }
+
+  .profile-title-row {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .profile-name {
+    font-size: 22px;
+  }
+
+  .profile-meta-row {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .profile-actions-row {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .profile-action-btn {
+    padding: 7px 12px;
+    font-size: 11.5px;
+  }
+
+  .ranked-card {
+    padding: 12px;
+  }
+
+  .ranked-emblem-wrapper {
+    width: 54px;
+    height: 54px;
+  }
+
+  .tier-name {
+    font-size: 14px;
+  }
+
+  /* Match History Mobile */
+  .history-header-card {
+    padding: 10px 12px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .queue-filter-tabs {
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+
+  .filter-tab {
+    padding: 5px 10px;
+    font-size: 11.5px;
+    white-space: nowrap;
   }
 
   .match-card-main {
     grid-template-columns: 1fr;
-    gap: 14px;
+    gap: 10px;
+    padding: 10px 12px;
   }
 
   .match-participants-col {
     display: none;
   }
 
+  .match-items-col {
+    align-items: flex-start;
+  }
+
   .details-row,
   .details-table-head {
     grid-template-columns: 1fr;
     gap: 8px;
+  }
+
+  /* Champions View Mobile */
+  .view-container {
+    padding: 16px 12px 30px;
+  }
+
+  .view-title {
+    font-size: 22px;
+  }
+
+  .roles-filter-bar {
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .champions-table-wrapper {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 34px;
+  }
+
+  .app-header {
+    padding: 0 8px;
+  }
+
+  .mobile-brand .brand-name {
+    font-size: 18px;
+  }
+
+  .header-right {
+    gap: 4px;
+  }
+
+  .api-status-badge .status-text {
+    display: none;
   }
 }

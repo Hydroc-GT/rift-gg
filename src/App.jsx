@@ -246,6 +246,19 @@ export function App() {
           {activeTab === 'champions' && (
             <ChampionsView onSelectChampion={(champ) => handleSearch(champ, currentRegion, true)} />
           )}
+
+          {/* Legal Disclaimer Footer (Riot Games Compliance) */}
+          <footer className="app-footer">
+            <div className="footer-content">
+              <div className="footer-brand-row">
+                <span className="footer-brand-name">RIFT<span className="text-accent">.GG</span></span>
+                <span className="footer-copy">© {new Date().getFullYear()} — Plataforma de análisis de League of Legends</span>
+              </div>
+              <p className="footer-disclaimer-text">
+                RIFT.GG isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
+              </p>
+            </div>
+          </footer>
         </main>
       </div>
 

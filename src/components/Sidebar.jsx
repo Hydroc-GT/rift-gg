@@ -18,7 +18,7 @@ export const Sidebar = ({ currentTab, onSelectTab, isCollapsed, onToggleCollapse
     <aside className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}>
       <div className="sidebar-brand" onClick={() => onSelectTab('search')}>
         <div className="brand-text-only">
-          <span className="brand-name">RIFT<span className="brand-accent" align="center">.GG</span></span>
+          <span className="brand-name">RIFT<span className="brand-accent">.GG</span></span>
         </div>
       </div>
 
